@@ -1,20 +1,20 @@
 package HeliosX::Logger::Syslog;
 
 use 5.008;
-use base qw(HeliosX::Logger);
+use base qw(Helios::Logger);
 use strict;
 use warnings;
 
 use Sys::Syslog;
 
-use HeliosX::LogEntry::Levels qw(:all);
-use HeliosX::Logger::LoggingError;
+use Helios::LogEntry::Levels qw(:all);
+use Helios::Error::LoggingError;
 
-our $VERSION = '0.02_0771';
+our $VERSION = '0.03_4931';
 
 =head1 NAME
 
-HeliosX::Logger::Syslog - HeliosX::Logger subclass implementing logging to syslogd for Helios
+HeliosX::Logger::Syslog - Helios::Logger subclass implementing logging to syslogd for Helios
 
 =head1 SYNOPSIS
 
@@ -26,14 +26,8 @@ HeliosX::Logger::Syslog - HeliosX::Logger subclass implementing logging to syslo
 
 =head1 DESCRIPTION
 
-This class extends the HeliosX::Logger class to provide a shim between HeliosX::ExtLoggerService 
-and Sys::Syslog.  This will allow Helios applications using HeliosX::ExtLoggerService to log 
-messages to syslogd. 
-
-NOTE: The base Helios system contains syslogd logging functionality, but this class enables 
-syslogd logging with HeliosX::ExtLoggerService.  An added benefit is the ability to completely 
-turn off internal Helios logging if desired, sending log messages only to syslogd.
-
+This class implments a Helios::Logger subclass to provide Helios applications 
+the ability to log messages to syslogd. 
 
 =head1 CONFIGURATION
 
@@ -66,7 +60,7 @@ sub init {
     my $config = $self->getConfig();
 
     unless ( defined($config->{syslog_facility}) ) {
-        throw HeliosX::Logger::LoggingError("CONFIGURATION ERROR: syslog_facility not defined"); 
+        throw Helios::Error::LoggingError("CONFIGURATION ERROR: syslog_facility not defined"); 
     }
     return 1;
 }
@@ -97,7 +91,7 @@ __END__
 
 =head1 SEE ALSO
 
-L<HeliosX::ExtLoggerService>, L<HeliosX::Logger>
+L<Helios::Service>, L<Helios::Logger>
 
 =head1 AUTHOR
 
@@ -105,7 +99,7 @@ Andrew Johnson, E<lt>lajandy at cpan dotorgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2009 by Andrew Johnson
+Copyright (C) 2009-11 by Andrew Johnson
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.0 or,

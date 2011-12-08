@@ -1,5 +1,7 @@
 Revision history for Perl extension HeliosX::Logger::Syslog.
 
+0.03_4931  Wed Dec  7 19:00:00 2011
+    - Upgraded to implement Helios::Logger (in Helios 2.30 and later)
 0.02_0771  Sun Feb 15 12:00:00 2009
     - HeliosX::Logger::Syslog separated into its own distribution
     - actually works!

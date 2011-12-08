@@ -1,10 +1,8 @@
-HeliosX-Logger-Syslog version 0.02
+HeliosX-Logger-Syslog version 0.03
 ==================================
 
-HeliosX::Logger::Syslog extends the HeliosX::Logger class to provide a 
-shim between HeliosX::ExtLoggerService and Sys::Syslog.  This will 
-allow Helios applications using HeliosX::ExtLoggerService to log 
-messages to syslogd. 
+HeliosX::Logger::Syslog extends the Helios::Logger class to allow Helios 
+applications to log messages to syslogd. 
 
 
 INSTALLATION
@@ -21,14 +19,13 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-  Helios 2.00
-  HeliosX::ExtLoggerService 0.02
+  Helios 2.30 or later
   Sys::Syslog 0.23
 
 
 COPYRIGHT AND LICENSE
 
-Copyright (C) 2009 by Andrew Johnson, except as noted.
+Copyright (C) 2009-11 by Andrew Johnson, except as noted.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.8 or,
