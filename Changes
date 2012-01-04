@@ -1,5 +1,9 @@
 Revision history for Perl extension HeliosX::Logger::Syslog.
 
+0.04_0121  Tue Jan 03 23:00:00 2012
+	-RELEASE CANDIDATE 1
+	-Added syslog_priority_threshold config param
+	-Added documentation
 0.04_0111  Mon Jan 02 23:00:00 2012
 	Revamped module!
 	-syslog_facility now defaults to 'user'

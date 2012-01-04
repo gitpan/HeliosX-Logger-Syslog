@@ -1,4 +1,4 @@
-HeliosX-Logger-Syslog version 0.03
+HeliosX-Logger-Syslog version 0.04
 ==================================
 
 HeliosX::Logger::Syslog extends the Helios::Logger class to allow Helios 
@@ -25,13 +25,8 @@ This module requires these other modules and libraries:
 
 COPYRIGHT AND LICENSE
 
-Copyright (C) 2009-11 by Andrew Johnson, except as noted.
+Copyright (C) 2009-12 by Andrew Johnson.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.8 or,
 at your option, any later version of Perl 5 you may have available.
-
-HeliosX::Logger::Internal contains code that is (C) 2008 CEB Toolbox, 
-Inc.  See the lib/HeliosX/Logger/Internal.pm file for copyright 
-information.
-
