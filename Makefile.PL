@@ -5,7 +5,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME              => 'HeliosX::Logger::Syslog',
     VERSION_FROM      => 'lib/HeliosX/Logger/Syslog.pm', # finds $VERSION
-    LICENSE           => 'perl',    
+    LICENSE           => 'artistic_2',    
     PREREQ_PM         => {
     	                   Helios       => 2.30,
     	                   Sys::Syslog  => 0.23

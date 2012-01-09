@@ -1,6 +1,6 @@
-.project
 Changes
 lib/HeliosX/Logger/Syslog.pm
+LICENSE
 Makefile.PL
 MANIFEST
 README

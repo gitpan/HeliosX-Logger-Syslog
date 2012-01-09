@@ -1,5 +1,9 @@
 Revision history for Perl extension HeliosX::Logger::Syslog.
 
+0.04_0171  Sun Jan 08 23:00:00 2012
+	-RELEASE CANDIDATE 2
+	-NEW LICENSE: Now available under terms of the 
+	 Artistic License 2.0
 0.04_0121  Tue Jan 03 23:00:00 2012
 	-RELEASE CANDIDATE 1
 	-Added syslog_priority_threshold config param

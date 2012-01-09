@@ -1,16 +1,16 @@
 package HeliosX::Logger::Syslog;
 
 use 5.008;
-use base qw(Helios::Logger);
 use strict;
 use warnings;
+use base qw(Helios::Logger);
 
 use Sys::Syslog;
 
 use Helios::LogEntry::Levels qw(:all);
 use Helios::Error::LoggingError;
 
-our $VERSION = '0.04_0121';
+our $VERSION = '0.04_0171';
 
 =head1 NAME
 
@@ -237,13 +237,16 @@ L<Helios::Service>, L<Helios::Logger>
 
 Andrew Johnson, E<lt>lajandy at cpan dotorgE<gt>
 
-=head1 COPYRIGHT AND LICENSE
+COPYRIGHT AND LICENSE
 
-Copyright (C) 2009-12 by Andrew Johnson
+Copyright (C) 2009-12 by Andrew Johnson.
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.0 or,
-at your option, any later version of Perl 5 you may have available.
+This library is free software; you can redistribute it and/or
+modify it under the terms of the Artistic License 2.0.
+
+This program is distributed in the hope that it will be useful,
+but without any warranty; without even the implied warranty of
+merchantability or fitness for a particular purpose.
 
 =head1 WARRANTY
 
