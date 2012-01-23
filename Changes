@@ -1,24 +1,15 @@
 Revision history for Perl extension HeliosX::Logger::Syslog.
 
-0.04_0171  Sun Jan 08 23:00:00 2012
-	-RELEASE CANDIDATE 2
-	-NEW LICENSE: Now available under terms of the 
-	 Artistic License 2.0
-0.04_0121  Tue Jan 03 23:00:00 2012
-	-RELEASE CANDIDATE 1
-	-Added syslog_priority_threshold config param
-	-Added documentation
-0.04_0111  Mon Jan 02 23:00:00 2012
-	Revamped module!
+1.00  Sun Jan 22 23:20:00 2012
+	-First stable release!
+	-Upgraded to implement Helios::Logger (in Helios 2.30 and later)
+	-added syslog_logmask config param
+	-added syslog_priority_threshold config param
 	-syslog_facility now defaults to 'user'
 	-added assembleMsg() to make customization easier
-	-added syslog_logmask config param
-0.03_4931  Wed Dec  7 19:00:00 2011
-    - Upgraded to implement Helios::Logger (in Helios 2.30 and later)
-0.02_0771  Sun Feb 15 12:00:00 2009
-    - HeliosX::Logger::Syslog separated into its own distribution
-    - actually works!
-    - lots of documentation!  Some of it even coherent!
+	-added documentation
+	-NEW LICENSE: Now available under terms of the 
+	 Artistic License 2.0
 0.01  Sat Feb 14 21:05:49 2009
 	- original version; created by h2xs 1.23 with options
 		-XA -b 5.8.0 HeliosX::Logger::Syslog

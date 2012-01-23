@@ -1,8 +1,8 @@
-HeliosX-Logger-Syslog version 0.04
+HeliosX-Logger-Syslog version 1.00
 ==================================
 
-HeliosX::Logger::Syslog extends the Helios::Logger class to allow Helios 
-applications to log messages to syslogd. 
+HeliosX::Logger::Syslog extends the Helios::Logger class to allow 
+Helios applications to log messages to syslogd. 
 
 
 INSTALLATION
